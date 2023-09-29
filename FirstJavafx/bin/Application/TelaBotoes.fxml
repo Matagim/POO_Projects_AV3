@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="400.0" prefWidth="640.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.BotoesController">
+  <children>
+      <HBox fx:id="hbox" alignment="CENTER" prefHeight="401.0" prefWidth="646.0">
+         <children>
+          <AnchorPane fx:id="pane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="401.0" prefWidth="640.0">
+               <children>
+                  <Button id="tk" fx:id="tk" layoutX="390.0" layoutY="250.0" mnemonicParsing="false" onAction="#graficoTk" prefHeight="25.0" prefWidth="120.0" text="TK/TM" />
+                  <Button id="rating" fx:id="rating" layoutX="390.0" layoutY="188.0" mnemonicParsing="false" onAction="#graficoRating" prefHeight="25.0" prefWidth="120.0" text="Rating" />
+                  <Button id="adr" fx:id="adr" layoutX="120.0" layoutY="250.0" mnemonicParsing="false" onAction="#graficoAdr" prefHeight="25.0" prefWidth="120.0" text="ADR" />
+                  <Button id="abates" fx:id="abates" layoutX="121.0" layoutY="130.0" mnemonicParsing="false" onAction="#graficoAbates" text="Total de abates" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="14.0" prefHeight="57.0" prefWidth="190.0" text="CS:GO" textAlignment="CENTER">
+                     <font>
+                        <Font name="Candara Italic" size="35.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.6208530805687205" endY="0.9620853080568721" startX="0.2938388625592417" startY="0.976303317535545">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.02631578966975212" green="0.006213450338691473" blue="0.006213450338691473" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.8399999737739563" green="0.554639995098114" blue="0.10920000076293945" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button id="impacto" fx:id="impacto" layoutX="121.0" layoutY="188.0" mnemonicParsing="false" onAction="#graficoImpacto" prefHeight="25.0" prefWidth="120.0" text="Impacto" />
+                  <Label alignment="CENTER" layoutX="155.0" layoutY="47.0" prefHeight="69.0" prefWidth="316.0" text="Counter-Strike: Graphic Overview">
+                     <font>
+                        <Font name="System Italic" size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="0.5355450236966824" startY="0.5165876777251185">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.07894736528396606" green="0.04568713530898094" blue="0.04568713530898094" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.006711409395973154">
+                                 <color>
+                                    <Color red="0.4736842215061188" green="0.3851608335971832" blue="0.09429824352264404" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.6800000071525574" green="0.49406856298446655" blue="0.08839999884366989" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Button id="abates" fx:id="mapas" layoutX="390.0" layoutY="130.0" mnemonicParsing="false" onAction="#graficoMapas" text="Total de mapas" />
+                  <Button id="abates" fx:id="arquivo" layoutX="264.0" layoutY="306.0" mnemonicParsing="false" onAction="#selecionador" text="Selecione o Arquivo csv" />
+               </children>
+          </AnchorPane>
+         </children>
+      </HBox>
+  </children>
+</VBox>
