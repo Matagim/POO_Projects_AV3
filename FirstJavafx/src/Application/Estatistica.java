@@ -29,15 +29,6 @@ class Estatistica implements Comparator<Estatistica>{
         this.data = data;
     }
 
-    public Estatistica(){
-    }
-
-    public Estatistica(String campeonato, String jogador, Double tk, Double adr){
-        this.campeonato = campeonato;
-        this.jogador = jogador;
-        this.tk = tk;
-        this.adr = adr;
-    }
 
     public String getCampeonato() {
         return campeonato;
