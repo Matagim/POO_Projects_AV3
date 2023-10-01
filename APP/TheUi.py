@@ -81,7 +81,7 @@ class Ui(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         # Configurar a imagem de fundo
-        self.setup_background_image()
+        self.imagem_de_fundo()
 
         
         
